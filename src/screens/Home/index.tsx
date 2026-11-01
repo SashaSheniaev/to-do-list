@@ -64,6 +64,12 @@ export function Home() {
     ]);
   }
 
+  function handleRenameTask(id: string, title: string) {
+    setTasks((currentTasks) =>
+      currentTasks.map((task) => (task.id === id ? { ...task, title } : task)),
+    );
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -108,6 +114,7 @@ export function Home() {
             data={item}
             handleCheck={handleToggleTaskDone}
             handleDelete={handleRemoveTask}
+            handleRename={handleRenameTask}
           />
         )}
         showsVerticalScrollIndicator={false}

@@ -45,4 +45,9 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  editLabel: {
+    color: '#808080',
+    fontSize: 18,
+    paddingHorizontal: 8,
+  },
 });
