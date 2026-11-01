@@ -96,9 +96,9 @@ export function Home() {
       </View>
 
       <View style={styles.titleContainer}>
-        <TaskInfo label="Покоївка" value={tasks.length} color="#4EA8DE" />
+        <TaskInfo label="Усі задачі" value={tasks.length} color="#4EA8DE" />
         <TaskInfo
-          label={'Conclu\u00eddas'}
+          label={'Завершені задачі'}
           value={tasks.filter((task) => task.done).length}
           color="#8284FA"
         />

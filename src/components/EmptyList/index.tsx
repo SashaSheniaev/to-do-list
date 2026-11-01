@@ -12,7 +12,7 @@ export function EmptyList({ message }: Props) {
       <Image source={clipboard} />
       <Text style={styles.text}>
         {message ??
-          'Voc\u00ea ainda n\u00e3o tem tarefas cadastradas.\nСтворюйте завдання та впорядковуйте свої справи.'}
+          'Створюйте завдання та впорядковуйте свої справи.'}
       </Text>
     </View>
   );
